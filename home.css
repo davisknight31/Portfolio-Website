@@ -1,44 +1,141 @@
 * {
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: monospace;
+  color: white;
 }
-/* 
-body {
-  padding: 25%;
-} */
 
-/* .wrapper {
+body {
+  background-color: black;
+}
+.wrapper {
   display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* animation: animateBg 50s linear infinite; */
+}
+
+.top-container {
+  background-image: url("./space-background.jpg") !important;
+  background-size: 30%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+  height: 100vh;
+  animation: animateBg 120s linear infinite;
+  background-position: center;
 
-.container {
-  display: flex;
-  justify-content: center;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
+.introduction {
+  font-size: 28pt;
+}
+
 .outline {
-  stroke: #ff22cf;
+  /* stroke: #4a22ff; */
+  stroke: rgb(255, 255, 88);
   /* fill: #252525; */
   fill: none;
-  stroke-width: 1;
+  stroke-width: 2;
   stroke-dasharray: 500;
   stroke-linecap: round;
-  animation: dash 5s linear;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear 2.5s forwards;
+
+  /* animation: dash 5s linear; */
+  /* animation: name duration timing-function delay iteration-count direction
+    fill-mode; */
+  /* animation-iteration-count: 1; */
+  animation-duration: 3s;
 }
 
 @keyframes dash {
   to {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 0;
   }
 }
 
-/* .st1 {
-  fill: none;
-  stroke: #ff00db;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 0, 25, 175;
-} */
+@keyframes blink {
+  0% {
+    fill: none;
+  }
+  50% {
+    fill: #c9bdff;
+  }
+  51% {
+    fill: none;
+  }
+  52% {
+    fill: #c9bdff;
+  }
+  100% {
+    fill: #c9bdff;
+  }
+}
+
+.introduction {
+  position: relative;
+  /* top: 50%; */
+  width: 24em;
+  max-width: fit-content;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 200%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translateY(-40%); */
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.first-typewriter {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.second-typewriter {
+  animation: typewriter 4s steps(44) 5200ms 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.hide-border {
+  border-right: none;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes animateBg {
+  0%,
+  100% {
+    background-size: 75%;
+  }
+  50% {
+    background-size: 25%;
+  }
+}
+
+.skills {
+  margin-top: 20px;
+  padding: 10%;
+  font-color: white;
+  background-color: #1a1a1a;
+}
