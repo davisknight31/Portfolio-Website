@@ -1,0 +1,44 @@
+* {
+  background-color: #1a1a1a;
+}
+/* 
+body {
+  padding: 25%;
+} */
+
+/* .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.outline {
+  stroke: #ff22cf;
+  /* fill: #252525; */
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 500;
+  stroke-linecap: round;
+  animation: dash 5s linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+/* .st1 {
+  fill: none;
+  stroke: #ff00db;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 0, 25, 175;
+} */

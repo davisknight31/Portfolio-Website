@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="417mm"
+   height="210mm"
+   viewBox="0 0 417 210"
+   version="1.1"
+   id="svg6177"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs6171" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="629.42093"
+     inkscape:cy="485.32146"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     width="298mm"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1432"
+     inkscape:window-y="819"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6174">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-87)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="24.054256"
+       y="176.72871"
+       id="text6724"><tspan
+         sodipodi:role="line"
+         id="tspan6722"
+         x="24.054256"
+         y="233.87871"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'Times New Roman, ';font-family:'Times New Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="44.901279"
+       y="143.05275"
+       id="text6728"><tspan
+         sodipodi:role="line"
+         id="tspan6726"
+         x="44.901279"
+         y="200.20274"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'Javanese Text';font-family:'Javanese Text';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="32.60688"
+       y="131.29289"
+       id="text6740"><tspan
+         sodipodi:role="line"
+         id="tspan6738"
+         x="32.60688"
+         y="178.19751"
+         style="stroke-width:0.26458332;-inkscape-font-specification:'Javanese Text';font-family:'Javanese Text';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.19444275px;line-height:1.25;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="209.24071"
+       y="165.03371"
+       id="text6744"><tspan
+         sodipodi:role="line"
+         id="tspan6742"
+         x="209.24071"
+         y="165.03371"
+         style="font-size:88.19444275px;text-align:center;text-anchor:middle;stroke-width:0.26458332">DAVIS</tspan><tspan
+         sodipodi:role="line"
+         x="209.24071"
+         y="275.27676"
+         style="font-size:88.19444275px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan6746">KNIGHT</tspan></text>
+  </g>
+</svg>
