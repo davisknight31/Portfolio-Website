@@ -3,10 +3,12 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-family: monospace;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: black;
+  background-color: #0c0c0c;
 }
 .wrapper {
   display: flex;
@@ -16,14 +18,14 @@ body {
 }
 
 .top-container {
-  background-image: url("./space-background.jpg") !important;
-  background-size: 30%;
+  background-image: url("spacebg-final.jpg") !important;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  animation: animateBg 120s linear infinite;
+  animation: animateBg 60s linear infinite;
   background-position: center;
 
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -53,24 +55,6 @@ body {
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-@keyframes blink {
-  0% {
-    fill: none;
-  }
-  50% {
-    fill: #c9bdff;
-  }
-  51% {
-    fill: none;
-  }
-  52% {
-    fill: #c9bdff;
-  }
-  100% {
-    fill: #c9bdff;
   }
 }
 
@@ -124,18 +108,129 @@ body {
 }
 
 @keyframes animateBg {
-  0%,
+  /* 0%,
   100% {
     background-size: 75%;
   }
   50% {
     background-size: 25%;
+  } */
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 140% auto;
+  }
+  100% {
+    background-size: 100% auto;
   }
 }
 
 .skills {
-  margin-top: 20px;
-  padding: 10%;
+  /* margin: 10%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #161616; */
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 150px;
+  /* animation-range-start: cover;
+  animation-range-end: 700px; */
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.skills-header {
+  margin-top: 10vh;
   font-color: white;
-  background-color: #1a1a1a;
+  font-size: 24pt;
+  padding: 5%;
+}
+
+.scroller {
+  max-width: 60%;
+  overflow: hidden;
+}
+
+#scroller-one {
+  padding-bottom: 5vh;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  /* -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  ); */
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding-block: 1rem;
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 20s)
+    var(--_animation-direction, forwards) linear infinite;
+
+  /* animation: scroll linear;
+  animation-timeline: scroll(root); */
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 2.5rem));
+  }
+}
+
+.skill-cards {
+  /* width: 100%; */
+
+  justify-content: space-evenly;
+}
+
+.skill-card {
+  display: flex;
+  justify-content: center;
+  /* background-color: #2c2c2c; */
+  font-size: 24pt;
+  /* padding: 5%; */
+}
+
+.skill-icon {
+  /* width: 15%;
+  height: 15%; */
+  width: 150px;
+  /* height: 250px; */
+}
+
+.bottom {
+  height: 50vh;
 }
