@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -88,34 +94,132 @@
           A full stack software developer.
         </div>
       </div>
-      <div class="skills">
-        <div class="skills-header">My Skills</div>
-
-        <div class="scroller" id="scroller-one" data-direction="left">
-          <div class="skill-cards scroller-inner">
-            <img class="skill-icon" src="./images/html-final.png" />
-            <img class="skill-icon" src="./images/css-final.png" />
-            <img class="skill-icon" src="./images/js-final.png" />
-            <img class="skill-icon" src="./images/ts-final.png" />
-            <img class="skill-icon" src="./images/angular-final.png" />
-            <img class="skill-icon" src="./images/vuejs-final.png" />
-            <img class="skill-icon" src="./images/aurelia-final.png" />
+      <div class="about-wrapper">
+        <h2>About Me</h2>
+        <div class="about">
+          <div class="about-info">
+            Full stack software developer with professional experience and a
+            love for building the best possible solution using the right
+            technology for the job. I take pride in constantly learning new
+            things and creating solutions using what I have learned. The tech
+            field cosntantly provides opportunies like this, which is what made
+            me realize this is the field for me. When I am not at my computer I
+            enjoy working out, playing with my dog, and reading.
           </div>
-        </div>
 
-        <div class="scroller" data-direction="right">
-          <div class="skill-cards scroller-inner">
-            <img class="skill-icon" src="./images/csharp-final.png" />
-            <img class="skill-icon" src="./images/net-final.png" />
-            <img class="skill-icon" src="./images/java-final.png" />
-            <img class="skill-icon" src="./images/python-final.png" />
-            <img class="skill-icon" src="./images/postgresql-final.png" />
-            <img class="skill-icon" src="./images/git-final.png" />
-            <img class="skill-icon" src="./images/jira-final.png" />
+          <div class="skills">
+            <div class="scroller" id="scroller-one" data-direction="left">
+              <div class="skill-cards scroller-inner">
+                <img class="skill-icon" src="./images/html-final.png" />
+                <img class="skill-icon" src="./images/css-final.png" />
+                <img class="skill-icon" src="./images/js-final.png" />
+                <img class="skill-icon" src="./images/ts-final.png" />
+              </div>
+            </div>
+            <div class="scroller" id="scroller-two" data-direction="right">
+              <div class="skill-cards scroller-inner">
+                <img class="skill-icon" src="./images/angular-final.png" />
+                <img class="skill-icon" src="./images/vuejs-final.png" />
+                <img class="skill-icon" src="./images/aurelia-final.png" />
+              </div>
+            </div>
+
+            <div class="scroller" id="scroller-three" data-direction="left">
+              <div class="skill-cards scroller-inner">
+                <img class="skill-icon" src="./images/csharp-final.png" />
+                <img class="skill-icon" src="./images/net-final.png" />
+                <img class="skill-icon" src="./images/java-final.png" />
+                <img class="skill-icon" src="./images/python-final.png" />
+              </div>
+            </div>
+
+            <div class="scroller" id="scroller-four" data-direction="right">
+              <div class="skill-cards scroller-inner">
+                <img class="skill-icon" src="./images/postgresql-final.png" />
+                <img class="skill-icon" src="./images/git-final.png" />
+                <img class="skill-icon" src="./images/jira-final.png" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="bottom">Test</div>
+      <div class="projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+          <div class="project-image">
+            <img
+              id="market-app-image"
+              src="placeholder-images/outdoor-market.jpg"
+            />
+          </div>
+          <div class="project-info">
+            <div class="project-title">Market App</div>
+            <div class="project-description">
+              Built using Angular, .NET, and PostgreSQL
+            </div>
+            <a href="https://x.com/home" target="_blank"
+              ><div class="project-button">Live Application</div></a
+            >
+            <a href="github.com" target="_blank"
+              ><div class="project-button">Source Code</div></a
+            >
+          </div>
+        </div>
+        <!-- <div class="projects-list">
+          <div
+            class="project-title selected"
+            id="market-app-title"
+            onclick="setProjectClasses('market-app', this.id)"
+          >
+            Market App
+          </div>
+          <div
+            class="project-title"
+            id="subscription-manager-title"
+            onclick="setProjectClasses('subscription-manager', this.id)"
+          >
+            Subscription Manager
+          </div>
+          <div
+            class="project-title"
+            id="author-website-title"
+            onclick="setProjectClasses('author-website', this.id)"
+          >
+            Author Website
+          </div>
+        </div>
+        <div class="project" id="market-app">
+          <div class="project-images">
+            <img
+              class="project-image"
+              src="./placeholder-images/night-market.jpg"
+            />
+          </div>
+          <div class="project-description">
+            This was a project that gave the user the ability to view market
+            information. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Neque sodales ut etiam sit amet nisl purus in. Elit duis
+            tristique sollicitudin nibh sit amet commodo nulla facilisi.
+            Consectetur adipiscing elit ut aliquam. Pretium lectus quam id leo
+            in vitae turpis massa sed. Rhoncus dolor purus non enim praesent
+            elementum facilisis. Malesuada fames ac turpis egestas integer eget
+            aliquet. Dictumst vestibulum rhoncus est pellentesque elit
+            ullamcorper dignissim cras. Eget nulla facilisi etiam dignissim
+            diam. Amet venenatis urna cursus eget nunc scele
+          </div>
+          <div class="project-links">
+            Source Code:
+            <a href="www.x.com" target="_blank">www.github.com</a>
+          </div>
+        </div>
+        <div class="project hidden-project" id="subscription-manager">
+          TEST IM PROJCET HERE 222
+        </div>
+        <div class="project hidden-project" id="author-website">
+          TEST IM PROJCET HERE 333
+        </div> -->
+      </div>
       <!-- </div> -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>

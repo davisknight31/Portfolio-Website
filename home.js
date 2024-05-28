@@ -1,3 +1,6 @@
+let chosenProjectId = "market-app";
+let choseProjectTitleId = "market-app-title";
+
 setTimeout(function () {
   document.getElementById("hello").classList.remove("first-typewriter");
   document.getElementById("hello").classList.add("hide-border");
@@ -26,4 +29,13 @@ function addAnimation() {
       scrollerInner.appendChild(duplicatedItem);
     });
   });
+}
+
+function setProjectClasses(targetId, titleId) {
+  document.getElementById(choseProjectTitleId).classList.remove("selected");
+  document.getElementById(chosenProjectId).classList.add("hidden-project");
+  chosenProjectId = targetId;
+  choseProjectTitleId = titleId;
+  document.getElementById(titleId).classList.add("selected");
+  document.getElementById(targetId).classList.remove("hidden-project");
 }
