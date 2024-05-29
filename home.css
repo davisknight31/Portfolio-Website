@@ -283,7 +283,6 @@ body {
 .projects {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   width: 100%;
 }
 
@@ -298,7 +297,7 @@ body {
 .project-image {
   display: flex;
   justify-content: center;
-  background-color: #e72626;
+  background-color: #272727;
   padding: 3%;
   width: 700px;
 }
@@ -316,6 +315,17 @@ body {
   width: 500px;
 }
 
+.project-info a {
+  width: fit-content;
+  text-wrap: nowrap;
+  text-align: center;
+  text-decoration: none;
+}
+
+#left-info {
+  text-align: right;
+}
+
 .project-title {
   font-size: 200%;
   font-weight: 700;
@@ -328,7 +338,7 @@ body {
 }
 
 .project-button {
-  padding: 2%;
+  padding: 8px;
   width: fit-content;
   background-color: #e72626;
 }
@@ -336,6 +346,10 @@ body {
   background-color: #ff6262;
 }
 
-a {
-  text-decoration: none;
+#left-button {
+  margin-left: auto;
+}
+
+#first-project {
+  margin-bottom: 100px;
 }
