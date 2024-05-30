@@ -8,7 +8,10 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #141414;
+  /* background-color: rgb(14, 14, 14); */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .wrapper {
   display: flex;
@@ -18,7 +21,7 @@ body {
 }
 
 .top-container {
-  background-image: url("spacebg-final.jpg") !important;
+  background-image: url("./images/spacebg-final.jpg") !important;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -124,6 +127,12 @@ body {
   }
 }
 
+.navbar {
+  height: 50px;
+  background-color: #1b1b1b;
+  box-shadow: 0 4px 4px rgba(10, 10, 10, 0.4);
+}
+
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -143,8 +152,40 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 10vw;
+  gap: 150px;
 }
+
+#particles-js canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+/* #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} */
 
 .about-info {
   display: flex;
@@ -155,6 +196,18 @@ body {
   font-weight: 500;
   font-size: 14pt;
   line-height: 1.8em;
+}
+
+.about-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 500px;
+}
+
+#headshot {
+  width: 40%;
 }
 
 .skills {
@@ -231,7 +284,7 @@ body {
 }
 
 .scroller[data-animated="true"] .scroller-inner {
-  width: max-content;
+  width: fit-content;
   flex-wrap: nowrap;
   animation: scroll var(--_animation-duration, 20s)
     var(--_animation-direction, forwards) linear infinite;
@@ -340,10 +393,14 @@ body {
 .project-button {
   padding: 8px;
   width: fit-content;
-  background-color: #e72626;
 }
-.project-button:hover {
-  background-color: #ff6262;
+
+#subscription-manager-button {
+  background-color: rgb(9, 211, 19);
+}
+
+#subscription-manager-button:hover {
+  background-color: rgb(102, 245, 109);
 }
 
 #left-button {
@@ -351,5 +408,9 @@ body {
 }
 
 #first-project {
+  margin-bottom: 100px;
+}
+
+#second-project {
   margin-bottom: 100px;
 }

@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <div class="wrapper">
       <div class="top-container">
         <div class="introduction first-typewriter" id="hello">
@@ -94,24 +95,38 @@
           A full stack software developer.
         </div>
       </div>
+      <div class="navbar"></div>
       <div class="about-wrapper">
         <h2>About Me</h2>
         <div class="about">
-          <div class="about-info">
-            Full stack software developer with professional experience and a
-            love for building the best possible solution using the right
-            technology for the job. I take pride in constantly learning new
-            things and creating solutions using what I have learned. The tech
-            field cosntantly provides opportunies like this, which is what made
-            me realize this is the field for me. When I am not at my computer I
-            enjoy working out, playing with my dog, and reading.
+          <div class="about-info-container">
+            <img id="headshot" src="./images/round-headshot.png" />
+            <div class="about-info">
+              Full stack software developer with professional experience and a
+              love for building the best possible solution using the right
+              technology for the job. I take pride in constantly learning new
+              things and creating solutions using what I have learned. The tech
+              field cosntantly provides opportunies like this, which is what
+              made me realize this is the field for me. When I am not at my
+              computer I enjoy working out, spending time with my dog, and
+              reading.
+            </div>
           </div>
 
           <div class="skills">
             <div class="scroller" id="scroller-one" data-direction="left">
               <div class="skill-cards scroller-inner">
-                <img class="skill-icon" src="./images/html-final.png" />
-                <img class="skill-icon" src="./images/css-final.png" />
+                <a
+                  href="https://html.spec.whatwg.org/multipage/"
+                  target="_blank"
+                  ><img class="skill-icon" src="./images/html-final.png"
+                /></a>
+                <a
+                  href="https://www.w3.org/Style/CSS/Overview.en.html"
+                  target="_blank"
+                >
+                  <img class="skill-icon" src="./images/css-final.png"
+                /></a>
                 <img class="skill-icon" src="./images/js-final.png" />
                 <img class="skill-icon" src="./images/ts-final.png" />
               </div>
@@ -167,22 +182,45 @@
         </div>
         <div class="project" id="second-project">
           <div class="project-info" id="left-info">
-            <div class="project-title">Market App</div>
+            <div class="project-title">Subscription Manager</div>
             <div class="project-description">
-              Built using Angular, .NET, and PostgreSQL
+              Built using VueJS and .NET | Senior Capstone at Ball State
+              University | Code cannot be shared.
             </div>
-            <a href="https://x.com/home" target="_blank" id="left-button"
-              ><div class="project-button">Live Application</div></a
+            <a
+              href="https://imgur.com/a/Kcyceqz"
+              target="_blank"
+              id="left-button"
+              ><div class="project-button" id="subscription-manager-button">
+                Image Gallery
+              </div></a
             >
-            <a href="github.com" target="_blank" id="left-button"
+            <!-- <a href="github.com" target="_blank" id="left-button"
               ><div class="project-button">Source Code</div></a
-            >
+            > -->
           </div>
           <div class="project-image" id="right-image">
+            <img id="market-app-image" src="./images/DashboardScreenshot.png" />
+          </div>
+        </div>
+        <div class="project" id="third-project">
+          <div class="project-image" id="left-image">
             <img
               id="market-app-image"
               src="placeholder-images/outdoor-market.jpg"
             />
+          </div>
+          <div class="project-info" id="right-info">
+            <div class="project-title">Author Website</div>
+            <div class="project-description">
+              Built using Angular, .NET, and PostgreSQL
+            </div>
+            <a href="https://x.com/home" target="_blank"
+              ><div class="project-button">Live Application</div></a
+            >
+            <a href="github.com" target="_blank"
+              ><div class="project-button">Source Code</div></a
+            >
           </div>
         </div>
         <!-- <div class="projects-list">
@@ -242,7 +280,8 @@
       </div>
       <!-- </div> -->
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="home.js"></script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="particles.js-master/particles.js"></script>
+  <script src="home.js"></script>
 </html>
