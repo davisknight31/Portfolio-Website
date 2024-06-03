@@ -133,7 +133,7 @@ function setParticles() {
 }
 
 let canvas = document.getElementsByTagName("canvas");
-window.addEventListener("resize", fitCanvas, false);
+// window.addEventListener("resize", fitCanvas, false);
 fitCanvas();
 
 function fitCanvas() {
@@ -171,7 +171,7 @@ function setProjectClasses(targetId, titleId) {
   document.getElementById(targetId).classList.remove("hidden-project");
 }
 
-setParticles();
+// setParticles();
 
 document
   .getElementById("submit-group")
