@@ -9,18 +9,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
   </head>
 
   <body>
     <div id="particles-js"></div>
     <div class="wrapper">
+      <div class="navigation-bubble-wrapper">
+        <div class="navigation-bubble">
+          <a href="#about-section">About</a>
+          <a href="#projects-section">Projects</a>
+          <a href="#contact-section">Contact Me</a>
+          <!-- <div>About</div>
+          <div>Projects</div>
+          <div>Contact</div> -->
+        </div>
+      </div>
       <div class="top-container">
         <div class="introduction first-typewriter" id="hello">
           Hello, my name is
         </div>
         <div class="name">
-          <svg
+          <!-- <svg
             xmlns:dc="http://purl.org/dc/elements/1.1/"
             xmlns:cc="http://creativecommons.org/ns#"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -31,6 +44,16 @@
             viewBox="0 0 417 210"
             height="82.5mm"
             width="162.75mm"
+          > -->
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg6177"
+            version="1.1"
+            viewBox="0 0 417 210"
           >
             <g transform="translate(0,-85)" id="layer1">
               <path
@@ -96,7 +119,7 @@
         </div>
       </div>
       <div class="navbar"></div>
-      <div class="about-wrapper">
+      <div class="about-wrapper" id="about-section">
         <h2>About Me</h2>
         <div class="about">
           <div class="about-info-container">
@@ -107,9 +130,10 @@
               technology for the job. I take pride in constantly learning new
               things and creating solutions using what I have learned. The tech
               field cosntantly provides opportunies like this, which is what
-              made me realize this is the field for me. When I am not at my
-              computer I enjoy working out, spending time with my dog, and
-              reading.
+              made me realize this is the field for me. I graduated from Ball
+              State University in May 2024 with my Bachelor's in CS. When I am
+              not at my computer I enjoy working out, spending time with my
+              dogs, and reading.
             </div>
           </div>
 
@@ -119,73 +143,152 @@
                 <a
                   href="https://html.spec.whatwg.org/multipage/"
                   target="_blank"
+                  class="skill-link"
                   ><img class="skill-icon" src="./images/html-final.png"
                 /></a>
                 <a
                   href="https://www.w3.org/Style/CSS/Overview.en.html"
                   target="_blank"
+                  class="skill-link"
                 >
                   <img class="skill-icon" src="./images/css-final.png"
                 /></a>
-                <img class="skill-icon" src="./images/js-final.png" />
-                <img class="skill-icon" src="./images/ts-final.png" />
+                <a
+                  href="https://www.javascript.com/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/js-final.png" />
+                </a>
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/ts-final.png" />
+                </a>
               </div>
             </div>
             <div class="scroller" id="scroller-two" data-direction="right">
               <div class="skill-cards scroller-inner">
-                <img class="skill-icon" src="./images/angular-final.png" />
-                <img class="skill-icon" src="./images/vuejs-final.png" />
-                <img class="skill-icon" src="./images/aurelia-final.png" />
+                <a
+                  href="https://angular.dev/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/angular-final.png" />
+                </a>
+                <a href="https://vuejs.org/" target="_blank" class="skill-link">
+                  <img class="skill-icon" src="./images/vuejs-final.png" />
+                </a>
+                <a
+                  href="https://aurelia.io/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/aurelia-final.png" />
+                </a>
               </div>
             </div>
 
             <div class="scroller" id="scroller-three" data-direction="left">
               <div class="skill-cards scroller-inner">
-                <img class="skill-icon" src="./images/csharp-final.png" />
-                <img class="skill-icon" src="./images/net-final.png" />
-                <img class="skill-icon" src="./images/java-final.png" />
-                <img class="skill-icon" src="./images/python-final.png" />
+                <a
+                  href="https://dotnet.microsoft.com/en-us/languages/csharp"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/csharp-final.png" />
+                </a>
+                <a
+                  href="https://dotnet.microsoft.com/en-us/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/net-final.png" />
+                </a>
+                <a
+                  href="https://www.java.com/en/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/java-final.png" />
+                </a>
+                <a
+                  href="https://www.python.org/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/python-final.png" />
+                </a>
               </div>
             </div>
 
             <div class="scroller" id="scroller-four" data-direction="right">
               <div class="skill-cards scroller-inner">
-                <img class="skill-icon" src="./images/postgresql-final.png" />
-                <img class="skill-icon" src="./images/git-final.png" />
-                <img class="skill-icon" src="./images/jira-final.png" />
+                <a
+                  href="https://www.postgresql.org/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/postgresql-final.png"
+                /></a>
+                <a
+                  href="https://git-scm.com/"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/git-final.png"
+                /></a>
+                <a
+                  href="https://www.atlassian.com/software/jira"
+                  target="_blank"
+                  class="skill-link"
+                >
+                  <img class="skill-icon" src="./images/jira-final.png"
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="projects-section">
+      <div class="projects-section" id="projects-section">
         <h2>Projects</h2>
         <div class="project" id="first-project">
           <div class="project-image" id="left-image">
-            <img
-              id="market-app-image"
-              src="placeholder-images/outdoor-market.jpg"
-            />
+            <img id="market-app-image" src="./images/MarketAppScreenshot.png" />
           </div>
           <div class="project-info" id="right-info">
-            <div class="project-title">Market App</div>
-            <div class="project-description">
-              Built using Angular, .NET, and PostgreSQL
+            <div class="project-title" id="market-app-title">
+              Market Info App
             </div>
-            <a href="https://x.com/home" target="_blank"
-              ><div class="project-button">Live Application</div></a
+            <div class="project-description">
+              Provides users with stock prices and the abiltiy to create stock
+              watchlists | Built using Angular, .NET, and PostgreSQL
+            </div>
+            <a href="#projects-section"
+              ><div class="project-button" id="market-app-button">
+                Live Application
+              </div></a
             >
-            <a href="github.com" target="_blank"
-              ><div class="project-button">Source Code</div></a
+            <a
+              href="https://github.com/davisknight31/Market-App"
+              target="_blank"
+              ><div class="project-button" id="market-app-button">
+                Source Code
+              </div></a
             >
           </div>
         </div>
         <div class="project" id="second-project">
           <div class="project-info" id="left-info">
-            <div class="project-title">Subscription Manager</div>
+            <div class="project-title" id="subscription-manager-title">
+              Subscription Manager
+            </div>
             <div class="project-description">
-              Built using VueJS and .NET | Senior Capstone at Ball State
-              University | Code cannot be shared.
+              Built using VueJS and .NET | Senior Capstone for
+              <a href="https://moneytree.com/">Moneytree</a> | Code cannot be
+              shared
             </div>
             <a
               href="https://imgur.com/a/Kcyceqz"
@@ -205,83 +308,73 @@
         </div>
         <div class="project" id="third-project">
           <div class="project-image" id="left-image">
-            <img
-              id="market-app-image"
-              src="placeholder-images/outdoor-market.jpg"
-            />
+            <img id="market-app-image" src="./images/AuthorWebsite.png" />
           </div>
           <div class="project-info" id="right-info">
-            <div class="project-title">Author Website</div>
+            <div class="project-title" id="author-website-title">
+              Author Website
+            </div>
             <div class="project-description">
-              Built using Angular, .NET, and PostgreSQL
+              Author/Portfolio Website for Dana Benbow | Built using HTML, CSS,
+              and Javascript | Hosted on thisplace.com
             </div>
             <a href="https://x.com/home" target="_blank"
-              ><div class="project-button">Live Application</div></a
+              ><div class="project-button" id="author-website-button">
+                Live Website
+              </div></a
             >
-            <a href="github.com" target="_blank"
-              ><div class="project-button">Source Code</div></a
+            <a
+              href="https://github.com/davisknight31/DBenbowAuthorWebsite"
+              target="_blank"
+              ><div class="project-button" id="author-website-button">
+                Source Code
+              </div></a
             >
           </div>
         </div>
-        <!-- <div class="projects-list">
-          <div
-            class="project-title selected"
-            id="market-app-title"
-            onclick="setProjectClasses('market-app', this.id)"
-          >
-            Market App
-          </div>
-          <div
-            class="project-title"
-            id="subscription-manager-title"
-            onclick="setProjectClasses('subscription-manager', this.id)"
-          >
-            Subscription Manager
-          </div>
-          <div
-            class="project-title"
-            id="author-website-title"
-            onclick="setProjectClasses('author-website', this.id)"
-          >
-            Author Website
-          </div>
-        </div>
-        <div class="project" id="market-app">
-          <div class="project-images">
-            <img
-              class="project-image"
-              src="./placeholder-images/night-market.jpg"
-            />
-          </div>
-          <div class="project-description">
-            This was a project that gave the user the ability to view market
-            information. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Neque sodales ut etiam sit amet nisl purus in. Elit duis
-            tristique sollicitudin nibh sit amet commodo nulla facilisi.
-            Consectetur adipiscing elit ut aliquam. Pretium lectus quam id leo
-            in vitae turpis massa sed. Rhoncus dolor purus non enim praesent
-            elementum facilisis. Malesuada fames ac turpis egestas integer eget
-            aliquet. Dictumst vestibulum rhoncus est pellentesque elit
-            ullamcorper dignissim cras. Eget nulla facilisi etiam dignissim
-            diam. Amet venenatis urna cursus eget nunc scele
-          </div>
-          <div class="project-links">
-            Source Code:
-            <a href="www.x.com" target="_blank">www.github.com</a>
-          </div>
-        </div>
-        <div class="project hidden-project" id="subscription-manager">
-          TEST IM PROJCET HERE 222
-        </div>
-        <div class="project hidden-project" id="author-website">
-          TEST IM PROJCET HERE 333
-        </div> -->
       </div>
-      <!-- </div> -->
+      <div class="contact-me-section" id="contact-section">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="send_email.php" method="POST">
+            <h2>Contact Me</h2>
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input
+                class="input-field"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input
+                class="input-field"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="message">Message:</label>
+              <textarea
+                class="input-field"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="input-group" id="submit-group">
+              <button id="submit" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="home.js"></script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <script src="particles.js-master/particles.js"></script>
-  <script src="home.js"></script>
 </html>

@@ -1,5 +1,6 @@
 let chosenProjectId = "market-app";
 let choseProjectTitleId = "market-app-title";
+// let resizeCount = 0;
 
 setTimeout(function () {
   document.getElementById("hello").classList.remove("first-typewriter");
@@ -16,26 +17,20 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-// particlesJS.load("particles-js", "particles.json", function () {
-//   console.log("callback - particles.js config loaded");
-// });
-
-/* ---- particles.js config ---- */
-
 function setParticles() {
   particlesJS("particles-js", {
     particles: {
       number: {
-        value: 100,
+        value: 50,
         density: {
           enable: true,
-          value_area: 800,
+          value_area: 2000,
         },
       },
       color: {
-        // value: ["#488CFF", "#C179FF"],
-        value: "random",
+        // value: ["#FFFFFF", "#2b71ff"],
+        // value: "random",
+        value: "#FFFFFF",
       },
       shape: {
         type: "circle",
@@ -53,7 +48,7 @@ function setParticles() {
         },
       },
       opacity: {
-        value: 0.5,
+        value: 0.9,
         random: false,
         anim: {
           enable: false,
@@ -138,14 +133,17 @@ function setParticles() {
 }
 
 let canvas = document.getElementsByTagName("canvas");
-// let content = canvas.getContext("2d");
 window.addEventListener("resize", fitCanvas, false);
 fitCanvas();
 
 function fitCanvas() {
-  console.log("hit");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+  // resizeCount++;
+  // if (resizeCount % 10 === 0) {
+  //   setParticles();
+  // }
+
   setParticles();
 }
 
@@ -174,3 +172,9 @@ function setProjectClasses(targetId, titleId) {
 }
 
 setParticles();
+
+document
+  .getElementById("submit-group")
+  .addEventListener("submit", function (event) {
+    alert("Form submitted successfully!");
+  });
