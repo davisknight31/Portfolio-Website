@@ -604,8 +604,16 @@ body {
     font-size: 175%;
   }
 
+  .about-info {
+    font-size: 11pt;
+  }
+
   .skill-icon {
     width: 65px;
+  }
+
+  .project-description {
+    font-size: 11pt;
   }
 }
 
