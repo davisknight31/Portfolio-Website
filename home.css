@@ -354,6 +354,7 @@ body {
 
 .skill-cards {
   justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 
 .skill-link:hover {
@@ -602,6 +603,10 @@ body {
   .introduction {
     font-size: 175%;
   }
+
+  .skill-icon {
+    width: 65px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -610,14 +615,33 @@ body {
   }
 
   .scroller {
-    max-width: 85%;
+    /* max-width: 85%; */
   }
 }
 
 @media (max-width: 500px) {
-  .scroller {
-    max-width: 75%;
+  .skills {
+    width: 100%;
   }
+
+  .scroller {
+    /* max-width: 75%; */
+    /* flex-wrap: wrap; */
+  }
+
+  .scroller[data-animated="true"] .scroller-inner {
+    /* width: fit-content;
+    animation: none;
+    flex-wrap: wrap; */
+  }
+
+  .skill-icon {
+    width: 50px;
+  }
+
+  /* .skill-link[aria-hidden="true"] {
+    display: none;
+  } */
 }
 
 /* for font sizing */
@@ -631,7 +655,7 @@ body {
   } */
 
   .scroller {
-    max-width: 70%;
+    /* max-width: 70%; */
   }
 
   /* .project-title {
@@ -644,7 +668,7 @@ body {
 
 @media (max-width: 400px) {
   .scroller {
-    max-width: 60%;
+    /* max-width: 60%; */
   }
 }
 
