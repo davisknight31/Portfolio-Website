@@ -338,12 +338,16 @@
         <div class="contact-form-wrapper">
           <form
             class="contact-form"
-            action="./send_email.php"
+            action="https://api.web3forms.com/submit"
             method="POST"
-            data-netlify="true"
           >
             <h2>Contact Me</h2>
             <div class="input-group">
+              <input
+                type="hidden"
+                name="access_key"
+                value="0719c6f6-9387-4e20-9562-e6f52e57710c"
+              />
               <label for="name">Name:</label>
               <input
                 class="input-field"
@@ -379,12 +383,12 @@
         </div>
       </div>
 
-      <div class="contact-links">
+      <!-- <div class="contact-links">
         <h2>Contact Me</h2>
         <div>davisknight7@gmail.com</div>
         <div>&lpar;317&rpar; 775-8889</div>
         <div>https://www.linkedin.com/in/davisknight1</div>
-      </div>
+      </div> -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="particles.js-master/particles.js"></script>
