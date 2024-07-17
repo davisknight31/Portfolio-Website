@@ -447,7 +447,7 @@ body {
 }
 
 #jump-to-recipe-title {
-  border-bottom: solid 3px rgb(228, 41, 41);
+  border-bottom: solid 3px #008cff;
 }
 
 #subscription-manager-title {
@@ -478,11 +478,11 @@ body {
 }
 
 #jump-to-recipe-button {
-  background-color: rgb(228, 41, 41);
+  background-color: #008cff;
 }
 
 #jump-to-recipe-button:hover {
-  background-color: rgb(255, 107, 107);
+  background-color: #58b4ff;
 }
 
 #subscription-manager-button {
