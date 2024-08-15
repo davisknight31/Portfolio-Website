@@ -443,7 +443,7 @@ body {
 }
 
 #market-app-title {
-  border-bottom: solid 3px rgb(82, 41, 228);
+  border-bottom: solid 3px #bc2dff;
 }
 
 #jump-to-recipe-title {
@@ -470,11 +470,11 @@ body {
 }
 
 #market-app-button {
-  background-color: rgb(82, 41, 228);
+  background-color: #bc2dff;
 }
 
 #market-app-button:hover {
-  background-color: rgb(139, 107, 255);
+  background-color: #d782ff;
 }
 
 #jump-to-recipe-button {
